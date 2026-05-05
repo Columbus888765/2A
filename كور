@@ -1,10 +1,4 @@
-local VIM = game:GetService("VirtualInputManager")
-
-while true do
-    VIM:SendMouseButtonEvent(727, 562, 0, true, game, 0)
-    VIM:SendMouseButtonEvent(727, 562, 0, false, game, 0)
-    task.wait(0.3)
-end local Players = game:GetService("Players")
+local Players = game:GetService("Players")
 local VirtualInputManager = game:GetService("VirtualInputManager")
 
 local player = Players.LocalPlayer
@@ -88,4 +82,11 @@ while true do
 
         repeat task.wait() until allTransparency(0)
     end
+end
+local VIM = game:GetService("VirtualInputManager")
+
+while true do
+    VIM:SendMouseButtonEvent(727, 562, 0, true, game, 0)
+    VIM:SendMouseButtonEvent(727, 562, 0, false, game, 0)
+    task.wait(0)
 end
